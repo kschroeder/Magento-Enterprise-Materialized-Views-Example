@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<modules>
+		<Eschrade_UserAgent>
+			<version>0.0.0.1</version>
+		</Eschrade_UserAgent>
+	</modules>
+	<global>
+		<models>
+			<eschrade_useragent>
+				<class>Eschrade_UserAgent_Model</class>
+				<resourceModel>eschrade_useragent_resource</resourceModel>
+			</eschrade_useragent>
+			<eschrade_useragent_resource>
+				<class>Eschrade_UserAgent_Model_Resource</class>
+				<entities>
+					<agentreport>
+						<table>eschrade_useragent_agentreport</table>
+					</agentreport>
+					<agentnames>
+						<table>eschrade_useragent_agentnames</table>
+					</agentnames>
+				</entities>
+			</eschrade_useragent_resource>
+		</models>
+		<helpers>
+			<eschrade_useragent>
+				<class>Eschrade_UserAgent_Helper</class>
+			</eschrade_useragent>
+		</helpers>
+		<blocks>
+			<eschrade_useragent>
+				<class>Eschrade_UserAgent_Block</class>
+			</eschrade_useragent>
+		</blocks>
+	
+
+		<index>
+			<indexer>
+				<eschrade_useragent_report>
+					<model>eschrade_useragent/index_ua_dummy</model>
+					<action_model>
+						<changelog>eschrade_useragent/index_ua_changed</changelog>
+						<all>eschrade_useragent/index_ua_all</all>
+					</action_model>
+					<index_table>log_url</index_table>
+				</eschrade_useragent_report>
+			</indexer>
+		</index>
+
+		<resources>
+			<eschrade_useragent_setup>
+				<setup>
+					<module>Eschrade_UserAgent</module>
+				</setup>
+			</eschrade_useragent_setup>
+		</resources>
+
+	</global>
+	<frontend>
+		<layout>
+			<updates>
+				<eschrade_useragent>
+					<file>eschrade/useragent.xml</file>
+				</eschrade_useragent>
+			</updates>
+		</layout>
+	</frontend>
+</config>
