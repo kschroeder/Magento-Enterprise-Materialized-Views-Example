@@ -1,6 +1,6 @@
 ## Introduction
 
-This repository is an example Magento extension that uses the new Mview component in Enterprise Edition 1.13.  It was built as part of an expert article done by Magento's ECG (Expert Consulting Group) showing how people can use the Mview component to create their own managed Materialized Views in Magento.
+This repository is an example Magento extension that uses the new Mview component in Enterprise Edition 1.13.  It was built as part of a blog post at http://www.eschrade.com/page/indexing-in-magento-or-the-wonderful-world-of-materialized-views/
 
 ## Installation
 
